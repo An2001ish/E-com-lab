@@ -5,15 +5,18 @@
   display: flex;
   /* align-items: center; */
   justify-content: center;
+  border-radius: 10px;
+  background-color: rgb(56, 56, 56)
 }
 
 .left-main a{
     text-decoration: none;
     font-size: 20px;
+    color: rgb(224, 224, 224);
 }
 
 .left-main ul{
-    line-height: 2;
+    line-height: 4;
 }
 
 .left-main ul li {
