@@ -1,0 +1,10 @@
+.slider-container{
+    width: 200%;
+    margin: auto;
+    display: flex;
+}
+
+.slider-image img{
+    width: 100vw;
+    height: 600px;
+}
