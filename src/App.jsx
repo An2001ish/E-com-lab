@@ -1,19 +1,11 @@
-import Bottom from "./Components/Bottom/Bottom";
-import LeftMain from "./Components/LeftMain/LeftMain";
-import RightMain from "./Components/RightMain/RightMain";
-import Top from "./Components/Top/Top";
+import React from 'react'
 
 function App() {
   return (
-    <div className="container">
-      <Top />
-      <div className="content">
-        <LeftMain />
-        <RightMain />
-      </div>
-      <Bottom/>
+    <div>
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
