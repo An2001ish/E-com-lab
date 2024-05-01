@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.nav-container a{
+    text-decoration: none;
+    font-family: "Source Code Pro", monospace;  
+    color: black;
+}
+
+.nav-items > li:first-child {
+    font-weight: bold;
+  }
+
+.nav-items li{
+    list-style-type: none;
+}
+
+.nav-items{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.logo img{
+    width: 200px;
+}
