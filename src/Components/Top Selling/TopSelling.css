@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.topselling-container{
+    width: 100vw;
+    height: 550px;
+    display: flex;
+    /* background-color: rgb(228, 225, 225); */
+    position: relative;
+    font-family:"Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+.topselling-container .ts{
+    position: absolute;
+    left: 590px;
+    top: 15px;
+    background-color: white;
+    padding: 0 10px;
+}
+
+.topselling-container ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 95%;
+    margin: 0px auto;
+    margin-top: 30px;
+    gap: 70px;
+    /* background-color: red; */
+    border-top: 1px solid rgb(65, 63, 63);
+}
+
+.topselling-container ul li{
+    list-style: none;
+} 
+
+.topselling-container ul li img{
+    width: 250px;
+}

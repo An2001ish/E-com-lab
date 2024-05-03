@@ -4,8 +4,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100vw;
     padding: 0 80px;
-    margin: 15px 0;
+    margin: 50px 0 15px 0;
 }
 
 .nav-container a{

@@ -6,7 +6,10 @@
     padding: 0 90px;
     width: 100vw;
     height: 40px;
-    background-color: rgb(31, 31, 31)
+    background-color: rgb(31, 31, 31);
+    position:fixed;
+    top: 0;
+    z-index: 999;
     /* background-color: white; */
 }
 
@@ -37,6 +40,6 @@
 
 .right-side{
     display: flex;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
 }

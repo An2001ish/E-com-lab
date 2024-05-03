@@ -17,7 +17,7 @@
 }
 
 .slider-images li img{
-    padding: 0 100px;
+    padding: 0 70px;
     width: 100vw;
     height: 600px;
 }
@@ -32,7 +32,7 @@
     flex-direction: column;
     position: absolute;
     z-index: 1; 
-    font-family:"Nunito", sans-serif;;
+    font-family:"Nunito", sans-serif;
 }
 
 .slider-images li p span:nth-child(1) {
@@ -47,7 +47,7 @@
 
 .slider-container ul li:nth-child(1) p{
     top: 100px; 
-    left: 800px;
+    left: 850px;
   }
 .slider-container ul li:nth-child(2) p{
     top: 100px; 
@@ -55,7 +55,7 @@
   }
 .slider-container ul li:nth-child(3) p{
     top: 100px; 
-    left: 250px;
+    left: 200px;
   }
 
 
