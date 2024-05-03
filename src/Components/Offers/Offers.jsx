@@ -3,7 +3,7 @@ import "./Offers.css"
 
 function Offers() {
   return (
-    <div>
+    <div className='offer-container'>
       
     </div>
   )
