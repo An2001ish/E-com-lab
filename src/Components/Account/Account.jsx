@@ -11,10 +11,10 @@ function Account() {
 
       <div className="right-side">
         <div className="account">
-          <a href="#" class="dropdown">
+          <a href="#" className="dropdown">
             My Account ▼
           </a>
-          <ul class="dropdown-menu">
+          <ul className="dropdown-menu">
             <li>
               <a href="#">My Dashboard</a>
             </li>
@@ -30,7 +30,7 @@ function Account() {
           </ul>
         </div>
         <div className="cart">
-            <img src={cart} alt="" />
+            <a href=""><img src={cart} alt="" /></a>
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ function App() {
       <Account/>
       <Navbar/>
       <Slider/>
+      <Offers/>
     </div>
   )
 }

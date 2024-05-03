@@ -5,12 +5,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 80px;
+    margin: 15px 0;
 }
 
 .nav-container a{
     text-decoration: none;
     font-family: "Source Code Pro", monospace;  
     color: black;
+    font-size: 18px;
 }
 
 .nav-items > li:first-child {
@@ -27,6 +29,20 @@
     align-items: center;
 }
 
+.logo{
+    /* border: 2px solid black; */
+    animation: jump 1s;
+}
+
 .logo img{
     width: 200px;
+}
+
+@keyframes jump {
+    from{
+
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
