@@ -30,20 +30,7 @@
     align-items: center;
 }
 
-.logo{
-    /* border: 2px solid black; */
-    animation: jump 1s;
-}
 
 .logo img{
     width: 200px;
-}
-
-@keyframes jump {
-    from{
-
-    }
-    to{
-        transform: rotate(360deg);
-    }
 }

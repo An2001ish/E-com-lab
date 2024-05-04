@@ -3,13 +3,19 @@ import "./Navbar.css"
 import profile from "./profile.png"
 import logo from "./logo.png"
 import search from "./search.png"
+import AOS from "aos"  
+import "aos/dist/aos.css"
 
 function Navbar() {
+
+  useEffect(()=>{
+    AOS.init({duration: 1000});
+  },[])
 
   return (
     <div className='nav-container'>
       <a href="" className='logo'>
-        <img src={logo} alt="" />
+        <img src={logo} alt="" data-aos="fade-right"/>
       </a>
       <ul className='nav-items'>
         <li><a href="">HOME</a></li>

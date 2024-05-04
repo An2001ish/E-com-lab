@@ -26,7 +26,7 @@ function Slider() {
           <p><span>Ends Tomorrow</span>
           <span>GET 25% OFF</span>
           </p>
-            <img src={image} alt="adasd" />
+            <img src={image} alt="adasd"/>
           </li>
         ))}
       </ul>
