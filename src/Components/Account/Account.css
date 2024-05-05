@@ -25,14 +25,32 @@
 
 .dropdown-menu li{
     list-style: none;
+    /* position: absolute; */
+    margin-top: 10px;
 }
 
 .dropdown-menu {
     position: absolute;
     z-index: 999;
     display: none;
-    background-color: rgb(31, 31, 31);
+    background-color: rgba(31, 31, 31, 0.822);
+    border: 1px solid rgb(31, 31, 31);
+    border-radius: 10px;
+    padding: 10px;
 }
+
+/* .dropdown-menu li:nth-child(1){
+    margin-top: 15px;
+}
+.dropdown-menu li:nth-child(2){
+    margin-top: 55px;
+}
+.dropdown-menu li:nth-child(3){
+    margin-top: 100px;
+}
+.dropdown-menu li:nth-child(4){
+    margin-top: 145px;
+} */
 
 .account:hover .dropdown-menu{
     display: block;
