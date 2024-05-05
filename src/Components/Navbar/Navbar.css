@@ -34,3 +34,15 @@
 .logo img{
     width: 200px;
 }
+
+.shop{
+    position: relative;
+}
+
+.inside-shop{
+    /* display: none; */
+    display: flex;
+    position: absolute;
+    z-index: 99;
+    /* text-align: center; */
+}
