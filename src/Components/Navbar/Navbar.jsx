@@ -5,6 +5,7 @@ import logo from "./logo.png";
 import search from "./search.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import explore from "./../Offers/offer2.png"
 
 function Navbar() {
   useEffect(() => {
@@ -21,42 +22,39 @@ function Navbar() {
           <a href="">HOME</a>
         </li>
         <li className="shop">
-          <a href="">SHOP</a>
+          <a href="" className="shop-name">SHOP</a>
           <div className="inside-shop">
             <div className="man">
-              Man
+              <div className="word">Man</div>
               <ul>
-                <li>Jacket</li>
-                <li>Suits</li>
-                <li>Sports</li>
-                <li>Jeans</li>
-                <li>T-Shirts</li>
-                <li>Shirts</li>
-                <li>Sweat-Shirts</li>
-                <li>Hoodies</li>
-                <li>Accessories</li>
+                <li><a href="">Jacket</a></li>
+                <li><a href="">Suits</a></li>
+                <li><a href="">Sports</a></li>
+                <li><a href="">Jeans</a></li>
+                <li><a href="">T-Shirts</a></li>
+                <li><a href="">Shirts</a></li>
+                <li><a href="">Hoodies</a></li>
+                <li><a href="">Accessories</a></li>
               </ul>
             </div>
             <div className="woman">
-              Woman
+            <div className="word">Woman</div>
               <ul>
-                <li>Coats</li>
-                <li>Outwear</li>
-                <li>Dress</li>
-                <li>Tops</li>
-                <li>T-Shirts</li>
-                <li>Shoes</li>
-                <li>Sweat-Shirts</li>
-                <li>Handbags</li>
-                <li>Accessories</li>
+                <li><a href="">Coats</a></li>
+                <li><a href="">OutWear</a></li>
+                <li><a href="">Dress</a></li>
+                <li><a href="">Tops</a></li>
+                <li><a href="">T-Shirts</a></li>
+                <li><a href="">Shoes</a></li>
+                <li><a href="">Handbags</a></li>
+                <li><a href="">Accessories</a></li>
               </ul>
             </div>
             <div className="explore">
-              Explore New Collections
-              <img src="" alt="" />
+              <div className="word">Explore</div>
+              <a href=""><img src={explore} alt="" /></a>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                totam.
+                Get exclusive discounts and hampers with your first order!
               </p>
             </div>
           </div>
