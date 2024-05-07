@@ -1,4 +1,4 @@
-import React, { Profiler, useEffect } from "react";
+import React, { Profiler, useEffect, useState } from "react";
 import "./Navbar.css";
 import profile from "./profile.png";
 import logo from "./logo.png";
@@ -8,9 +8,20 @@ import "aos/dist/aos.css";
 import explore from "./../Offers/offer2.png"
 
 function Navbar() {
+
+  const [isInsideShopActive, setIsInsideShopActive] = useState(false);
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
+  const handleMouseEnter = () => {
+    setIsInsideShopActive(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsInsideShopActive(false);
+  };
 
   return (
     <div className="nav-container">
@@ -22,8 +33,11 @@ function Navbar() {
           <a href="">HOME</a>
         </li>
         <li className="shop">
-          <a href="" className="shop-name">SHOP</a>
-          <div className="inside-shop">
+          <a href="" className="shop-name" onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>SHOP</a>
+          <div className={`inside-shop ${isInsideShopActive ? 'active' : ''}`}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
             <div className="man">
               <div className="word">Man</div>
               <ul>
