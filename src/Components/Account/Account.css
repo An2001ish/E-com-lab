@@ -39,19 +39,6 @@
     padding: 10px;
 }
 
-/* .dropdown-menu li:nth-child(1){
-    margin-top: 15px;
-}
-.dropdown-menu li:nth-child(2){
-    margin-top: 55px;
-}
-.dropdown-menu li:nth-child(3){
-    margin-top: 100px;
-}
-.dropdown-menu li:nth-child(4){
-    margin-top: 145px;
-} */
-
 .account:hover .dropdown-menu{
     display: block;
 }

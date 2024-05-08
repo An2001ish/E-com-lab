@@ -1,4 +1,4 @@
-import React, { Profiler, useEffect, useState } from "react";
+import React, { Profiler, useEffect, useRef, useState } from "react";
 import "./Navbar.css";
 import profile from "./profile.png";
 import logo from "./logo.png";
@@ -7,9 +7,45 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import explore from "./../Offers/offer2.png"
 
+function SearchComponent({ onClose }) {
+  const searchRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        onClose();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [onClose]);
+
+  return (
+    <div className="search-overlay">
+      <div className="search-box" ref={searchRef}>
+        <input type="text" placeholder="Search Something" />
+        {/* <button onClick={onClose}>Close</button> */}
+      </div>
+    </div>
+  );
+}
+
 function Navbar() {
 
   const [isInsideShopActive, setIsInsideShopActive] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  const toggleSearch = (e) => {
+    e.preventDefault();
+    setIsSearchOpen(!isSearchOpen);
+  };
+
+  const closeSearch = () => {
+    setIsSearchOpen(false);
+  };
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -77,9 +113,10 @@ function Navbar() {
           <a href="">CONTACT</a>
         </li>
         <li>
-          <a href="">
+          <a href="" onClick={toggleSearch}>
             <img src={search} alt="" />
           </a>
+          
         </li>
         <li>
           <a href="">
@@ -87,6 +124,7 @@ function Navbar() {
           </a>
         </li>
       </ul>
+      {isSearchOpen && <SearchComponent onClose={closeSearch} />}
     </div>
   );
 }
